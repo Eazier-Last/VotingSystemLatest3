@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.App {
+  display: flex;
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.logoutButton {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logoutButton:hover {
+  background-color: #ff7875;
+}
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.voters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: row; */
+  /* width: 400px; */
+}
+ .timer{
+  width: 1015px;
+  display: grid;
+  
+  grid-template-columns: 3fr 1.3fr;
+  /* height: 20px; */
+  /* background-color: white; */
+  /* width: 500px; */
+  /* border-radius: 20px; */
+ }
+ .timer1{
+  border-radius: 10px;
+  margin-right: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+ 
+  background-color: white;
+  /* height: 100px; */
+ }
+ .timerBtn{
+  border-radius: 10px;
+  
+  background-color: white;
+  /* height: 100px; */
+ }
+
+.numVoter,
+.numVoted {
+  padding: 20px;
+  
+  /* margin-right: 8px; */
+  /* margin-left: 2px; */
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+  color: rgb(122, 122, 122);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.numVoter{
+  margin-right: 5px;
+}
+.numVoted{
+  margin-left: 5px;
+}
+.homeRow {
+  padding-top: 100px;
+  display: flex;
+  height: auto;
+  width: 100vw;
+}
+.homeRow .navSpace {
+  display: grid;
+  width: 220px;
+  background-color: black;
+}
+.homeRow .homeContainer {
+  flex: 88%;
+  place-items: center;
+  /* background-color: blue; */
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  width: 1010px;
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.chart1,
+.chart2 {
+  /* margin-right: 5px; */
+ 
+  /* background-color: rgb(255, 255, 255); */
+  /* height: 400px; */
+  /* width: 500px; */
+  /* border-radius: 10px; */
+}
+.chart22{
+  margin-top: 10px;
+  padding-top: 10px;
+
+    /* margin-right: 5px; */
+    /* margin-left: 5px; */
+    background-color: white;
+    /* height: 400px; */
+    /* height: 20px; */
+
+    /* width: 500px; */
+    border-radius: 10px;
+  
+}
+.chart1{
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.chart2{
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.listContainer {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 970px;
+  /* margin-top: 5px; */
+  border-radius: 10px;
+}
+.candidateListContainer{
+  margin-top: 10px;
+
+}
+.homeListContainer{
+  margin-top: 5px;
+}
+.userContainer{
+  margin-top: 10px;
+}
+
+.positionForm {
+  /* border: solid #1ab394 5px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: start; */
+  flex-direction: column;
+  /* width: auto !important; */
+  width: 970px;
+  /* background-color: #1ab394; */
+  /* color: white !important; */
+}
+.positionForm {
+  color: #1ab394;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+.topLabel {
+  color: #1ab394;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+.btnAdd {
+  border: 1px solid #1ab394 !important;
+  font-size: 1.3rem !important;
+  padding: 0 !important;
+  /* width: 40px; */
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  /* border: solid 1px gray; */
+  /* border-left-style: none; */
+  /* padding: 8.5px;
+    font-size: 1rem; */
+}
+.btnAdd :hover {
+  background-color: #1ab394 !important;
+}
+.positionInput {
+  margin-top: 10px;
+}
+.inputField {
+  display: flex;
+  justify-content: center;
+}
+#outlined-size-small.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1ab394;
+}
+
+.listTable {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.tableList {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  font-size: large;
+  letter-spacing: 0.5rem;
+  color: gray;
+  width: 900px;
+  /* background-color: rgb(224, 224, 255); */
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  border: 1px #1ab394 solid;
+  border-radius: 10px;
+}
+.tableContent {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: lightblue; */
+  align-items: center;
+  width: 880px;
+  /* border-top: 1px gray solid; */
+  border-bottom: 1px #1ab394 solid;
+  padding: 10px;
+
+  /* border-radius: 10px; */
+}
+.positionTabletext {
+  color: #1ab394;
+  display: grid;
+  flex: 70%;
+}
+.positionTable {
+  display: grid;
+  flex: 70%;
+}
+.actionTable {
+  flex: 30%;
+  color: #1ab394;
+}
+
+.profileContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  /* background-color: #1ab394; */
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profileRow {
+  border: #1ab394 solid 2px;
+  /* background-color: white; */
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.HomeprofileContainer {
+  display: flex;
+  flex-direction: row;
+  /* grid-template-columns: auto auto; */
+
+  /* background-color: #1ab394; */
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.HomeprofileRow {
+  border: #1ab394 solid 2px;
+  /* background-color: white; */
+  height: 55px;
+  width: 55px;
+  border-radius: 1000px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+
+  /* position: relative; */
+}
+.HomeCandidate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.HomeImgSize {
+  max-width: 100px;
+  border-radius: 10px;
+  max-height: 100px;
+}
+.HomeCandidateName {
+  font-size: 1.5rem;
+  color: #314051;
+  font-weight: 500;
+  margin-left: 20px;
+  line-height: 0;
+}
+.HomePosition {
+  line-height: 0;
+  color: #1ab394;
+  letter-spacing: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: #314051;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+.Sidebar {
+  max-width: 300px;
+  background-color: #314051;
+  color: white;
+  position: fixed;
+  top: 60px;
+  z-index: 999;
+}
+
+.ContentArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.homeContainer {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  /* background-color: #9c8d8d; */
+}
+
+.HomeText {
+  font-size: 24px;
+}
+
+.Sidebar {
+  margin: 0;
+  /* border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 100px; */
+  height: 100vh;
+  width: 220px;
+  background-color: #314051;
+  padding: 10px;
+}
+
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+
+  /* border: 1px black solid; */
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+.SidebarList #active {
+  background-color: #1ab394;
+}
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+.candidateName {
+  line-height: 0;
+  font-size: 1.5rem;
+  color: #314051;
+  font-weight: 500;
+}
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.header {
+  font-family: Langar;
+  font-size: 2rem;
+}
+
+.position {
+  color: #1ab394;
+  letter-spacing: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.votePageLabel {
+  text-align: center;
+  color: #1ab394;
+}
+
+.votePageLogout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.SPACE .tooltip,
+.SPACE .label,
+.SPACE .total {
+  display: none;
+}
+
+.votePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.thankYouBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1ab394;
+}
+
+.thankYou h1 {
+  font-size: 3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.thankYou p {
+  font-size: 1.5rem;
+}
+
+.profileAction {
+  display: flex;
+  flex-direction: row;
+}
+.candidActions {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.candidBtn {
+  height: 50px;
+  width: 50px;
+}
+
+.categoryAction {
+  display: flex;
+  align-items: center;
+}
+
+.categoryActionBtn {
+  display: flex;
+  height: 40px;
+}
+
+/* .candidate .selected {
+  background-color: #1ab394;
+} */
+.overlayText {
+  color: red;
+}
+
+.homeTopLabel {
+  background-color: #1ab394;
+  margin-top: 0 !important;
+  color: white !important;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.candidInfoTitle{
+  background-color: #1ab394;
+  text-align: center;
+  /* width: 100% !important; */
+}
+
+.candidInfoProfile{
+  margin-top: 20px;
+    display:grid;
+    width: 100%;
+  grid-template-columns: 1fr 2fr;
+}
+
+.candidInfoImage{
+  display: flex;
+  /* flex: 1f; */
+  /* background-color: red; */
+}
+.candidInfoName{
+  display: flex;
+  
+  align-items: start;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  /* flex: 10f; */
+  /* background-color: blue; */
+}
+
+.candidateDetails{
+  flex-direction: column;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.candidInformation{
+  width: 100%;
+  padding-left: 40px;
+}
+
+.closeInfoBtn{
+  width: 250px;
+}
+
+.candidateProfileContainer{
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+

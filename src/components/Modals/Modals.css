@@ -1,0 +1,105 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.closeBtn {
+  position: relative;
+  right: -200px;
+  top: 0px;
+}
+.closeIcon {
+  color: grey;
+  /* height: 60px; */
+  /* width: 30px; */
+  /* padding: 0; */
+}
+.closeIcon:hover {
+  color: red;
+}
+#imageUpload {
+  display: none;
+}
+
+.uploadIcon {
+  color: #1ab394;
+  cursor: pointer;
+}
+span {
+  color: #1ab394;
+  font-weight: bold;
+}
+
+.imgSize {
+  max-width: 200px;
+  border-radius: 10px;
+  max-height: 200px;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 10px;
+  display: flex;
+}
+
+.login {
+  text-align: center !important;
+}
+
+.confirmVote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  /* background-color: rebeccapurple; */
+  border-radius: 20px;
+}
+.confirmVoteBtn {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.confirmBtn {
+  width: 180px;
+  height: 50px;
+}
+.confirmVoteBtn {
+  /* padding: 100px; */
+}
+.dialogTitle {
+  background-color: #1ab394;
+  /* width: 100px; */
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.confirmTable {
+  width: 420px;
+}
